@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'brew install maven'
+                //sh 'brew install maven'
                 sh 'mvn -f java-tomcat-sample/pom.xml clean package'
             }
             post {
